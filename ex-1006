@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
  
     Scanner teclado = new Scanner (System.in);
-     float A,B,C;
+     float A,B,C,D;
      
      A = teclado.nextFloat();
      
@@ -14,9 +14,9 @@ public class Main {
      
      C = teclado.nextFloat();
      
-     D = (A * 2 + B * 3+ C * 5)/2;
+     D = (A * 2 + B * 3 + C * 5)/10;
      
-     System.out.println("MEDIA = "+D);
+     System.out.printf("\nMEDIA = %.1f",+D);
     }
  
 }
