@@ -7,13 +7,13 @@ public class Main {
     public static void main(String[] args) throws IOException {
         Scanner teclado = new Scanner (System.in);
     
-    double A,B,C;    
+    double A,B,R;    
     
-    A = teclado.nextDouble();
-    B = A * A;
-    C = B * 3.14159;
+    R = teclado.nextDouble();
+    A = R * R;
+    B = A * 3.14159;
     
-    System.out.println("A= "+C);
+    System.out.printf("\nA=%.4f",+B);
     
  
       
