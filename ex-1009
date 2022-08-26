@@ -8,16 +8,15 @@ public class Main {
         Scanner teclado = new Scanner (System.in);
        
         String A;
-        double B,C,D,E;
+        double B,C,D;
         
         A = teclado.nextLine();
         B = teclado.nextDouble();
         C = teclado.nextDouble();
-        D = C * 0.15;
-        E = B + D;
+        D = (C * 0.15) + B;
     
         
-        System.out.printf("Total = R$ %.2f\n",+E);
+        System.out.printf("Total = R$ %.2f\n",+D);
     }
  
 }
