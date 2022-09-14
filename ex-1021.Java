@@ -1,56 +1,83 @@
-import java.util.Locale;
 import java.util.Scanner;
+import java.io.IOException;
+import java.util.Locale;
+
+
 
 public class Main {
 
-	public static void main(String[] args) {
-		
-		Locale.setDefault(Locale.US);
-		Scanner input = new Scanner(System.in);
-		
-		double valor = input.nextDouble();
-		int numInt = 0;
-		
-		
-		
-		System.out.println("NOTAS:");
-		numInt = (int) valor / 100;
-		System.out.println(numInt + " nota(s) de R$ 100.00");
-		valor = valor % 100;
-		numInt = (int) valor / 50;
-		System.out.println(numInt + " nota(s) de R$ 50.00");
-		valor = valor % 50;
-		numInt = (int) valor / 20;
-		System.out.println(numInt + " nota(s) de R$ 20.00");
-		valor = valor % 20;
-		numInt = (int) valor / 10;
-		System.out.println(numInt + " nota(s) de R$ 10.00");
-		valor = valor % 10;
-		numInt = (int) valor / 5;
-		System.out.println(numInt + " nota(s) de R$ 5.00");
-		valor = valor % 5;
-		numInt = (int) valor / 2;
-		System.out.println(numInt + " nota(s) de R$ 2.00");
-		valor = valor % 2;
-		
-		System.out.println("MOEDAS:");
-		numInt = (int) valor / 1;
-		valor = valor % 1;
-		System.out.println(numInt + " moeda(s) de R$ 1.00");
-		numInt =  (int) (valor / 0.5);
-		valor = valor % 0.5;
-		System.out.println(numInt + " moeda(s) de R$ 0.50");
-		numInt = (int) (valor / 0.25);
-		valor = valor % 0.25;
-		System.out.println(numInt + " moeda(s) de R$ 0.25");
-		numInt = (int) (valor / 0.10);
-		valor = valor % 0.10;
-		System.out.println(numInt + " moeda(s) de R$ 0.10");
-		numInt = (int) (valor / 0.05);
-		valor = valor % 0.05;
-		System.out.println(numInt + " moeda(s) de R$ 0.05");
-		numInt = (int) (valor / 0.01);
-		System.out.println(numInt + " moeda(s) de R$ 0.01");
-			
-	}
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        Locale.setDefault(Locale.US);
+
+        double valorInf = input.nextDouble();
+        double valor = 0;
+
+
+
+        System.out.println("NOTAS:");
+
+        valor =  valorInf /  100;
+        System.out.printf("%.0f nota(s) de R$ 100.00\n", Math.floor(valor));
+        valorInf =  valorInf % 100;
+
+        valor = valorInf / 50;
+        System.out.printf("%.0f nota(s) de R$ 50.00\n" , Math.floor(valor));
+        valorInf =  valorInf % 50;
+
+        valor =   valorInf / 20;
+        System.out.printf("%.0f nota(s) de R$ 20.00\n" , Math.floor(valor));
+        valorInf =  valorInf % 20;
+
+        valor =   valorInf / 10;
+        System.out.printf("%.0f nota(s) de R$ 10.00\n" , Math.floor(valor));
+        valorInf =  valorInf % 10;
+
+        valor =  valorInf / 5;
+        System.out.printf("%.0f nota(s) de R$ 5.00\n" , Math.floor(valor));
+        valorInf = valorInf % 5;
+
+        valor =   valorInf / 2;
+        System.out.printf("%.0f nota(s) de R$ 2.00\n" , Math.floor(valor));
+        valorInf =  valorInf % 2;
+
+
+        System.out.println("MOEDAS:");
+
+        valor =   valorInf / 1;
+        valorInf =  valorInf % 1.0;
+        System.out.printf("%.0f moeda(s) de R$ 1.00\n",Math.floor(valor));
+
+        valor =   valorInf / 0.5;
+        valorInf = valorInf % 0.5;
+        System.out.printf("%.0f moeda(s) de R$ 0.50\n",Math.floor(valor));
+
+
+        valor =  valorInf / 0.25;
+        valorInf = valorInf % 0.25;
+        System.out.printf("%.0f moeda(s) de R$ 0.25\n",Math.floor(valor));
+
+
+
+        valor =  valorInf / 0.1;
+        valorInf = valorInf % 0.1;
+        System.out.printf("%.0f moeda(s) de R$ 0.10\n",Math.floor(valor));
+
+
+
+        valor =  valorInf / 0.05;
+        valorInf = valorInf % 0.05;
+        System.out.printf("%.0f moeda(s) de R$ 0.05\n",Math.floor(valor));
+
+
+
+        valor =  valorInf / 0.01;
+        System.out.printf("%.0f moeda(s) de R$ 0.01\n",Math.floor(valor));
+
+
+    }
+
 }
