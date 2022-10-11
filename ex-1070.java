@@ -3,8 +3,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int x = sc.nextInt();
+        
+     Scanner entrada = new Scanner(System.in);
+        int x = entrada.nextInt();
         int count = 0;
         if (x > 0) {
             while (count < 6) {
