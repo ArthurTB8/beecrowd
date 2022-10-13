@@ -4,8 +4,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 
-        double x = teclado.nextDouble();
-        double y = teclado.nextDouble();
+        double x = teclado.nextInt();
+        double y = teclado.nextInt();
 
         while (x != 0 && y != 0) {
             if (x > 0 && y > 0) {
@@ -18,8 +18,8 @@ public class Main {
                 System.out.println("segundo");
             }
 
-            x = teclado.nextDouble();
-            y = teclado.nextDouble();
+            x = teclado.nextInt();
+            y = teclado.nextInt();
         }
     }
 }
