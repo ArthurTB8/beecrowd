@@ -27,6 +27,5 @@ public class Main {
 			n = n - 1;
 			testasoma = 0;
 		}
-		entrada.close();
 	}
 }
